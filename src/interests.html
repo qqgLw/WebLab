@@ -10,70 +10,75 @@
     <title>Мои интересы</title>
 </head>
 <body>
-    <header class="menu">
-     <div class="container">
-        <div class="menu_elem">
-            <a href="index.html">Главная</a> 
-       </div>
-       <div class="menu_elem">
-            <a href="about.html">Обо мне</a> 
-       </div> 
-       <div class="menu_elem">
-            <a href="interests.html">Мои интересы</a> 
-       </div> 
-       <div class="menu_elem">
-            <a href="study.html">Учеба</a> 
-       </div> 
-       <div class="menu_elem">
-            <a href="album.html">Фотоальбом</a> 
-       </div> 
-       <div class="menu_elem">
-            <a href="contact.html">Контакт</a> 
-       </div> 
-       <div class="menu_elem">
-            <a href="test.html">Тест</a> 
-       </div>   
-     </div> 
+     <header>
+          <nav class="menu">
+               <div class="menu_elem">
+                    <a href="index.html">Главная</a> 
+               </div>
+               <div class="menu_elem">
+                    <a href="about.html">Обо мне</a> 
+               </div> 
+               <div class="menu_elem">
+                    <a href="interests.html">Мои интересы</a> 
+               </div> 
+               <div class="menu_elem">
+                    <a href="study.html">Учеба</a> 
+               </div> 
+               <div class="menu_elem">
+                    <a href="album.html">Фотоальбом</a> 
+               </div> 
+               <div class="menu_elem">
+                    <a href="contact.html">Контакт</a> 
+               </div> 
+               <div class="menu_elem">
+                    <a href="test.html">Тест</a> 
+               </div>   
+          </nav>
     </header>
     <main>
      <article>
           <header>
                <h1>Мои интересы</h1>
           </header> 
-          <section>
+          <aside>
                <ul>
-                    <li><a href="#hobbies">Мои хобби</a></li>
-                    <li><a href="#books">Мои любимые книги</a></li>
-                    <li><a href="#music">Моя любимая музыка</a></li>
-                    <li><a href="#movies">Мои любимые фильмы</a></li>
+                    <li><a class="alt-href" href="#hobbies">Мои хобби</a></li>
+                    <li><a class="alt-href" href="#books">Мои любимые книги</a></li>
+                    <li><a class="alt-href" href="#music">Моя любимая музыка</a></li>
+                    <li><a class="alt-href" href="#movies">Мои любимые фильмы</a></li>
                </ul>
-          </section>
+          </aside>
           <br>
-          <article id="interests_block">
+          <div id="interests-block">
                <section>
-                    <header id="hobbies">
+                    <header>
+                         <p><a name="hobbies"></a></p>
                          <h2>Мои хобби</h2>
                     </header>
                     <br>
                </section>
                <section>
-                    <header id="books">
+                    <header>
+                         <p><a name="books"></a></p>
                          <h2>Мои любимые книги</h2>
                     </header>
                     <br>
                </section>
                <section>
-                    <header id="music">
+                    <header>
+                         <p><a name="music"></a></p>
                          <h2>Моя любимая музыка</h2>
                     </header>
                     <br>
                </section>
                <section>
-                    <header id="movies">
+                    <header>
+                         <p><a name="movies"></a></p>
                          <h2>Мои любимые фильмы</h2>
                     </header>
+                    <br>
                </section>
-          </article> 
+          </div> 
      </article>
     </main>
 </body>

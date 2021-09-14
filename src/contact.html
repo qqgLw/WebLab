@@ -10,52 +10,54 @@
     <title>Контакты</title>
 </head>
 <body>
-    <header class="menu">
-     <div class="container">
-        <div class="menu_elem">
-            <a href="index.html">Главная</a> 
-       </div>
-       <div class="menu_elem">
-            <a href="about.html">Обо мне</a> 
-       </div> 
-       <div class="menu_elem">
-            <a href="interests.html">Мои интересы</a> 
-       </div> 
-       <div class="menu_elem">
-            <a href="study.html">Учеба</a> 
-       </div> 
-       <div class="menu_elem">
-            <a href="album.html">Фотоальбом</a> 
-       </div> 
-       <div class="menu_elem">
-            <a href="contact.html">Контакт</a> 
-       </div> 
-       <div class="menu_elem">
-            <a href="test.html">Тест</a> 
-       </div>   
-     </div> 
+     <header>
+          <nav class="menu">
+               <div class="menu_elem">
+                    <a href="index.html">Главная</a> 
+               </div>
+               <div class="menu_elem">
+                    <a href="about.html">Обо мне</a> 
+               </div> 
+               <div class="menu_elem">
+                    <a href="interests.html">Мои интересы</a> 
+               </div> 
+               <div class="menu_elem">
+                    <a href="study.html">Учеба</a> 
+               </div> 
+               <div class="menu_elem">
+                    <a href="album.html">Фотоальбом</a> 
+               </div> 
+               <div class="menu_elem">
+                    <a href="contact.html">Контакт</a> 
+               </div> 
+               <div class="menu_elem">
+                    <a href="test.html">Тест</a> 
+               </div>   
+          </nav>
     </header>
     <main>
      <article>
           <header>
                <h1>Напишите мне на  эл. почту</h1>
           </header> 
-          <form action="mailto:antontoporkoff@gmail.com">
+          <section>
+              <form action="mailto:antontoporkoff@gmail.com">
                <div>
-                    <input type="text" placeholder="ФИО*" id="name" />
-                    <input type="email" placeholder="Электронная почта*" id="email" />
+                    <input type="text" name="name" placeholder="ФИО*"/>
+                    <input type="email" name="email" placeholder="Электронная почта*" />
                </div>
                <div>
                     <p>Выберите пол:</p>
-                    Мужской<input name="pol" type="radio" id="male_gender" />
-                    Женский<input name="pol" type="radio" id="female_gender"/>
+                    Мужской<input name="pol" type="radio"/>
+                    Женский<input name="pol" type="radio"/>
                </div>
-               <textarea name="message" id="message_text" cols="20" rows="5" placeholder="Ваше сообщение*"></textarea>
+               <textarea name="message" cols="20" rows="5" placeholder="Ваше сообщение*"></textarea>
                <div>
-                 <input type="submit" value="Отправить"/>
-                 <input type="reset" value="Сбросить"/>
+                 <input name="submit" type="submit" value="Отправить"/>
+                 <input name="reset" type="reset" value="Сбросить"/>
                </div>
-          </form>
+               </form> 
+          </section>
      </article>
     </main>
 </body>
