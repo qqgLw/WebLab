@@ -3,12 +3,35 @@
     margin: 0;
     font-size: 14px;
 }
+section {
+    margin: 2em auto;
+}
+p {
+    text-align: justify;
+    margin-bottom:5px;
+}
 form {
     font-size: 12px; 
 }
-table,
-td,
-th {
+html {
+  height: 100%;
+}
+body>header {
+    height: 50px;
+}
+body {
+  height:100%;
+  background-color: gray;
+}
+main {
+    padding: 3em;
+	max-width: 70%;
+	margin: auto;
+	height: 100%;
+	overflow: hidden;
+	background-color: white;	
+}
+table,td,th {
   border: 1px solid black;
 }
 .menu_elem {
@@ -34,10 +57,17 @@ th {
 input {
     display: list-item;
 }
+.tabbed {
+    display: inline-block;
+    margin-left: 40px;
+}
 h1 {
-    text-align: center;
-    margin-bottom: 5px;
+    font-size: 21px;
+	text-align: center;
+}
+h2 {
     font-size: 18px;
+    margin:5px;
 }
 a {
     text-decoration: none;
@@ -50,43 +80,73 @@ a.alt-href {
     text-decoration: none;
     color: #383838;
 }
-article {
-    position: relative;
-    top: 50px;
-    margin: 5px 5% auto;
+.album-container {
+	padding: 2px 5px;
+	text-align: center;
 }
-.row {
-    display: flex;
-    align-items: center;
-}
-.col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    float: left;
-    width: 20%;
-    margin: 0.5em;
+.album-elem {
+    display: inline-block;
+    width: 100px;
+    margin: 2px;
 }
 .image {
-    max-height: 50px;
-    border-style: solid;
-    border-color: #000000;
-    border-width: 1px;
+    max-width: 10vh;
+    border: 2px solid black;
 }
 #avatar {
     float: left;
-    width: 50px;
     margin-right: 5px;
 }
-.col img {
-    width: 100%;
+aside {
+    float:unset;
 }
-ol.test li{
-    margin-bottom: 8px;
+.test li{
+    margin-bottom: 2em;
 }
-ol.test {
-    margin-left: 5px;
+.test {
+    margin-top: 5px;
+    margin-left: 2px;
 }
 .cell-center-text {
+    text-align: center;
+}
+.centered {
+	margin-left:auto;
+	margin-right:auto;
+}
+form {
+	max-width: 40%;
+	margin: auto;
+	height: 100%;
+}
+form input {
+	width: 100%;
+	margin: 0;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	padding: 0;
+
+}
+form textarea {
+	width: 100%;
+	max-width: 100%;
+	min-height: 100px;
+	padding: 0;
+}
+.gender-select {
+	width: 5%;
+    display: inline;
+}
+.submit-container {
+    width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.option-group {
+    margin: 5px auto;
+}
+.submit-container input {
+    width: 45%;
+    border: none;
     text-align: center;
 }

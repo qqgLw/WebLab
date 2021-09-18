@@ -48,16 +48,16 @@
                          <input name="name" type="text" placeholder="ФИО*"/>
                     </div>
                     <p>Выберете Вашу группу из контекстного списка:</p>
-                              <select name="group" multiple size="4">
-                                   <optgroup label="I курс">
-                                        <option value="1">ИС/б-21-1-о
-                                        <option value="2">ИС/б-21-2-о
-                                   </optgroup>
-                                   <optgroup label="III курс">
-                                        <option value="3">ИС/б-19-2-о
-                                        <option value="4">ИС/б-19-2-о  
-                                   </optgroup>
-                              </select>
+                    <select class="option-group" name="group" multiple size="4">
+                         <optgroup label="I курс">
+                              <option value="1">ИС/б-21-1-о
+                              <option value="2">ИС/б-21-2-о
+                         </optgroup>
+                         <optgroup label="III курс">
+                              <option value="3">ИС/б-19-2-о
+                              <option value="4">ИС/б-19-2-о  
+                         </optgroup>
+                    </select>
                     <ol class="test">
                          <li>
                               <p>
@@ -72,14 +72,16 @@
                               </p>
                               <br />
                               <p>Выберете варианты ответа:</p>
-                              <input type="checkbox" name="awnser21"/>
-                              <label for="awnser21">Вариант 1</label>
-                              <input type="checkbox" name="awnser22"/>
-                              <label for="awnser22">Вариант 2</label>
-                              <input type="checkbox" name="awnser23"/>
-                              <label for="awnser23">Вариант 3</label>
-                              <input type="checkbox" name="awnser24"/>
-                              <label for="awnser24">Вариант 4</label>
+                              <div>
+                                   <input type="checkbox" name="awnser21"/>
+                                   <label for="awnser21">Вариант 1</label>
+                                   <input type="checkbox" name="awnser22"/>
+                                   <label for="awnser22">Вариант 2</label>
+                                   <input type="checkbox" name="awnser23"/>
+                                   <label for="awnser23">Вариант 3</label>
+                                   <input type="checkbox" name="awnser24"/>
+                                   <label for="awnser24">Вариант 4</label>
+                              </div>
                          </li>
                          <li>
                               <p>
@@ -99,8 +101,10 @@
                               </select>
                          </li>
                     </ol>
-                    <input name="submit" type=submit value="Отправить"/>
-                    <input name="reset" type="reset" value="Сбросить"/>
+                    <div class="submit-container">
+                         <input class="submit-button" name="submit" type=submit value="Отправить"/>
+                         <input class="submit-button" name="reset" type="reset" value="Сбросить"/>
+                    </div>
                </form>
           </section>
      </article>
