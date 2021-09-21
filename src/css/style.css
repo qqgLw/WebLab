@@ -35,7 +35,7 @@ table,td,th {
   border: 1px solid black;
 }
 .menu_elem {
-    size: 100%;
+    width: 100%;
     display: inline;
     line-height: 50px;
 }
@@ -55,16 +55,14 @@ table,td,th {
     transform: translate(-50%, -50%);
 }
 label {
-    float: left
+    float: left;
 }
 span {
     display: block;
     overflow: hidden;
-    padding: 0 4px 0 6px;
 }
 input {
     width: 100%;
-    display: list-item;
 }
 .tabbed {
     display: inline-block;
@@ -131,10 +129,7 @@ form {
 form input {
 	width: 100%;
 	margin: 0;
-	margin-top: 5px;
-	margin-bottom: 10px;
 	padding: 0;
-
 }
 form textarea {
 	width: 100%;
