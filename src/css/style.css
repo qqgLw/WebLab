@@ -54,7 +54,16 @@ table,td,th {
     top: 25px;
     transform: translate(-50%, -50%);
 }
+label {
+    float: left
+}
+span {
+    display: block;
+    overflow: hidden;
+    padding: 0 4px 0 6px;
+}
 input {
+    width: 100%;
     display: list-item;
 }
 .tabbed {
@@ -101,7 +110,7 @@ aside {
     float:unset;
 }
 .test li{
-    margin-bottom: 2em;
+    margin: 2em auto;
 }
 .test {
     margin-top: 5px;
