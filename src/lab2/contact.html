@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Я не знаю что здесь происходит, это сгенерило VSCode-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Здесь заканчивается магия-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Контакты</title>
+</head>
+<body>
+     <header>
+          <nav class="menu">
+               <div class="menu_elem">
+                    <a href="index.html">Главная</a> 
+               </div>
+               <div class="menu_elem">
+                    <a href="about.html">Обо мне</a> 
+               </div> 
+               <div class="menu_elem">
+                    <a href="interests.html">Мои интересы</a> 
+               </div> 
+               <div class="menu_elem">
+                    <a href="study.html">Учеба</a> 
+               </div> 
+               <div class="menu_elem">
+                    <a href="album.html">Фотоальбом</a> 
+               </div> 
+               <div class="menu_elem">
+                    <a href="contact.html">Контакт</a> 
+               </div> 
+               <div class="menu_elem">
+                    <a href="test.html">Тест</a> 
+               </div>   
+          </nav>
+    </header>
+    <main>
+     <article>
+          <header>
+               <h1>Напишите мне на  эл. почту</h1>
+          </header> 
+          <section>
+              <form action="mailto:antontoporkoff@gmail.com" method="POST" onsubmit="return checkContactForm(this)">
+               <div>
+                    <label for="name">ФИО</label>
+                    <input type="text" placeholder="ФИО" id="name">
+                    <label for="email">Электронная почта</label>
+                    <input type="email" placeholder="Электронная почта" id="email">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" placeholder="+7(123)-456-78-90" id="phone">
+               </div>
+               <div class="radio-select">
+                    <p>Выберите пол:</p>
+                    <label for="gender_male">Мужской</label>
+                    <input type="radio" name="gender" id="gender_male" value="male" checked>
+                    <label for="gender_female">Женский</label>
+                    <input type="radio" name="gender" id="gender_female" value="female">
+               </div>
+               <textarea name="message" cols="20" rows="5" placeholder="Ваше сообщение*"></textarea>
+               <div class="submit-container">
+                 <input name="submit" type="submit" value="Отправить"/>
+                 <input name="reset" type="reset" value="Сбросить"/>
+               </div>
+               </form> 
+          </section>
+     </article>
+    </main>
+    <script src="js/contact-form-script.js"></script>
+</body>
+</html>

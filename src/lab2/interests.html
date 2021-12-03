@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Я не знаю что здесь происходит, это сгенерило VSCode-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Здесь заканчивается магия-->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/interests-script.js"></script>
+    <title>Мои интересы</title>
+</head>
+<body>
+     <header>
+          <nav class="menu">
+               <div class="menu_elem">
+                    <a href="index.html">Главная</a> 
+               </div>
+               <div class="menu_elem">
+                    <a href="about.html">Обо мне</a> 
+               </div> 
+               <div class="menu_elem">
+                    <a href="interests.html">Мои интересы</a> 
+               </div> 
+               <div class="menu_elem">
+                    <a href="study.html">Учеба</a> 
+               </div> 
+               <div class="menu_elem">
+                    <a href="album.html">Фотоальбом</a> 
+               </div> 
+               <div class="menu_elem">
+                    <a href="contact.html">Контакт</a> 
+               </div> 
+               <div class="menu_elem">
+                    <a href="test.html">Тест</a> 
+               </div>   
+          </nav>
+    </header>
+    <main>
+     <article>
+          <header>
+               <h1>Мои интересы</h1>
+          </header> 
+          <aside>
+               <script>
+				displayListOfIntereses(
+					{anchor: "#hobbies", title: "Мои хобби"},
+					{anchor: "#books", title: "Мои любимые книги"},
+					{anchor: "#music", title: "Мои любимая музыка"},
+					{anchor: "#movies", title: "Мои любимые фильмы"});
+			</script>
+               <!-- <ul>
+                    <li><a class="alt-href" href="#hobbies">Мои хобби</a></li>
+                    <li><a class="alt-href" href="#books">Мои любимые книги</a></li>
+                    <li><a class="alt-href" href="#music">Моя любимая музыка</a></li>
+                    <li><a class="alt-href" href="#movies">Мои любимые фильмы</a></li>
+               </ul> -->
+          </aside>
+          <br>
+               <section>
+                    <header>
+                         <a name="hobbies"></a>
+                         <h2>Мои хобби</h2>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus repudiandae voluptatibus hic eveniet perspiciatis, sit dolore neque sapiente amet odio id necessitatibus. Temporibus nihil magni nemo deserunt maiores commodi! Minima?</p>
+                    </header>
+                    <br>
+               </section>
+               <section>
+                    <header>
+                         <a name="books"></a>
+                         <h2>Мои любимые книги</h2>
+                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, qui. Ab quisquam corporis totam natus eveniet aspernatur esse. Necessitatibus obcaecati cum voluptatibus impedit harum! Dolore id laudantium maiores impedit veniam.</p>
+                    </header>
+                    <br>
+               </section>
+               <section>
+                    <header>
+                         <a name="music"></a>
+                         <h2>Моя любимая музыка</h2>
+                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea sunt dolore rerum exercitationem asperiores commodi vitae nobis mollitia reiciendis! Natus dolorem voluptatibus at cupiditate facilis tempore voluptatem, suscipit velit molestias?</p>
+                    </header>
+                    <br>
+               </section>
+               <section>
+                    <header>
+                         <a name="movies"></a>
+                         <h2>Мои любимые фильмы</h2>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae facilis esse cum beatae quam similique quisquam dignissimos, laboriosam ipsa molestias voluptatem nobis modi dolorem a quos. Cupiditate assumenda quas ipsa!
+                         </p>
+                    </header>
+                    <br>
+               </section> 
+     </article>
+    </main>
+</body>
+</html>

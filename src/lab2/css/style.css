@@ -53,9 +53,6 @@ table,td,th {
     top: 25px;
     transform: translate(-50%, -50%);
 }
-label {
-    float: left;
-}
 span {
     display: block;
     overflow: hidden;
@@ -139,7 +136,7 @@ form textarea {
 	min-height: 100px;
 	padding: 0;
 }
-.gender-select {
+.radio-select input {
 	width: 5%;
     display: inline;
 }
