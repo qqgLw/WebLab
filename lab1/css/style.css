@@ -1,0 +1,158 @@
+* {
+    font-family: Times New Roman, sans-serif;
+    margin: 0;
+    font-size: 14px;
+}
+
+section {
+    margin: 2em auto;
+}
+p {
+    text-align: justify;
+    margin-bottom:5px;
+}
+form {
+    font-size: 12px; 
+}
+
+body>header {
+    height: 50px;
+}
+body {
+  height:100%;
+  background-color: gray;
+}
+main {
+    max-width: 1000px;
+	margin: auto;
+	height: 100%;
+	overflow: hidden;
+    padding: 3em;
+	background-color: white;	
+}
+table,td,th {
+  border: 1px solid black;
+}
+.menu_elem {
+    width: 100%;
+    display: inline;
+    line-height: 50px;
+}
+.menu_elem a {
+    font-size: 18px;
+    margin: 5px;
+}
+.menu {
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 25px;
+    transform: translate(-50%, -50%);
+}
+label {
+    float: left;
+}
+span {
+    display: block;
+    overflow: hidden;
+}
+input {
+    width: 100%;
+}
+.tabbed {
+    display: inline-block;
+    margin-left: 40px;
+}
+h1 {
+    font-size: 21px;
+	text-align: center;
+}
+h2 {
+    font-size: 18px;
+    margin:5px;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+a:hover, a.alt-href:hover {
+    color: #818181c0
+}
+a.alt-href {
+    text-decoration: none;
+    color: #383838;
+}
+.album-row {
+	display: flex;
+	flex-wrap: nowrap;
+}
+.album-col {
+    display: flex;
+    overflow: hidden;
+    margin: 2px;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.image {
+    border: 2px solid black;
+}
+#avatar {
+    display: block;
+    max-width: 80px;
+    float: left;
+    margin-right: 5px;
+}
+aside {
+    float:unset;
+}
+.test li{
+    margin: 2em auto;
+}
+.test {
+    margin-top: 5px;
+    margin-left: 2px;
+}
+.cell-center-text {
+    text-align: center;
+}
+.centered {
+	margin-left:auto;
+	margin-right:auto;
+}
+form {
+	max-width: 40%;
+	margin: auto;
+	height: 100%;
+}
+form input {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+form textarea {
+	width: 100%;
+	max-width: 100%;
+	min-height: 100px;
+	padding: 0;
+}
+.gender-select {
+	width: 5%;
+    display: inline;
+}
+.submit-container {
+    width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.option-group {
+    margin: 5px auto;
+}
+.submit-container input {
+    width: 45%;
+    border: none;
+    text-align: center;
+}

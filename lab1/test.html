@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Я не знаю что здесь происходит, это сгенерило VSCode-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Здесь заканчивается магия-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Тест по МИО</title>
+</head>
+<body>
+     <header>
+          <nav class="menu">
+               <div class="menu_elem">
+                    <a href="index.html">Главная</a> 
+               </div>
+               <div class="menu_elem">
+                    <a href="about.html">Обо мне</a> 
+               </div> 
+               <div class="menu_elem">
+                    <a href="interests.html">Мои интересы</a> 
+               </div> 
+               <div class="menu_elem">
+                    <a href="study.html">Учеба</a> 
+               </div> 
+               <div class="menu_elem">
+                    <a href="album.html">Фотоальбом</a> 
+               </div> 
+               <div class="menu_elem">
+                    <a href="contact.html">Контакт</a> 
+               </div> 
+               <div class="menu_elem">
+                    <a href="test.html">Тест</a> 
+               </div>   
+          </nav>
+    </header>
+    <main>
+     <article>
+          <header>
+               <h1>Тест по методам исследования операций (МИО):</h1>
+          </header> 
+          <section>
+               <header><a class="alt-href" href="study.html"><p>Учеба</p></a></header>
+               <form action="mailto:antontoporkoff@gmail.com">
+                    <p>Введите ФИО:</p>
+                    <div>
+                         <input name="name" type="text" placeholder="ФИО*"/>
+                    </div>
+                    <p>Выберете Вашу группу из контекстного списка:</p>
+                    <select class="option-group" name="group" multiple size="4">
+                         <optgroup label="I курс">
+                              <option value="1">ИС/б-21-1-о
+                              <option value="2">ИС/б-21-2-о
+                         </optgroup>
+                         <optgroup label="III курс">
+                              <option value="3">ИС/б-19-2-о
+                              <option value="4">ИС/б-19-2-о  
+                         </optgroup>
+                    </select>
+                    <ol class="test">
+                         <li>
+                              <p>
+                                   Вопрос номер 1:
+                              </p>
+                              <input type="text" placeholder="Ваш ответ*" name="awnser1" />
+                         </li>
+                         <li>
+                              <p>
+                                   Вопрос номер два:
+                              </p>
+                              <p>Выберете варианты ответа:</p>
+                              <div>
+                                   <label for="awnser21">Вариант 1</label>
+                                   <span><input type="checkbox" id="awnser21"/></span>
+                                   <label for="awnser22">Вариант 2</label>
+                                   <span><input type="checkbox" id="awnser22"/></span>
+                                   <label for="awnser23">Вариант 3</label>
+                                   <span><input type="checkbox" id="awnser23"/></span>                                   
+                                   <label for="awnser24">Вариант 4</label>
+                                   <span><input type="checkbox" id="awnser24"/></span>
+                              </div>
+                         </li>
+                         <li>
+                              <p>
+                                   Вопрос номер 3:
+                              </p>
+                              <p>Выберете вариант из контекстного списка:</p>
+                              <select name="awnser3" multiple size="4">
+                                   <optgroup label="Первые два варианта">
+                                        <option value="1">1
+                                        <option value="2">2
+                                   </optgroup>
+                                   <optgroup label="Последние два варианта">
+                                        <option value="3">3
+                                        <option value="4">4  
+                                   </optgroup>
+                              </select>
+                         </li>
+                    </ol>
+                    <div class="submit-container">
+                         <input class="submit-button" name="submit" type=submit value="Отправить"/>
+                         <input class="submit-button" name="reset" type="reset" value="Сбросить"/>
+                    </div>
+               </form>
+          </section>
+     </article>
+    </main>
+</body>
+</html>
