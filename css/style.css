@@ -3,6 +3,7 @@
     margin: 0;
     font-size: 14px;
 }
+
 section {
     margin: 2em auto;
 }
@@ -13,9 +14,7 @@ p {
 form {
     font-size: 12px; 
 }
-html {
-  height: 100%;
-}
+
 body>header {
     height: 50px;
 }
@@ -24,11 +23,11 @@ body {
   background-color: gray;
 }
 main {
-    padding: 3em;
-	max-width: 70%;
+    max-width: 1000px;
 	margin: auto;
 	height: 100%;
 	overflow: hidden;
+    padding: 3em;
 	background-color: white;	
 }
 table,td,th {
@@ -87,20 +86,23 @@ a.alt-href {
     text-decoration: none;
     color: #383838;
 }
-.album-container {
-	padding: 2px 5px;
-	text-align: center;
+.album-row {
+	display: flex;
+	flex-wrap: nowrap;
 }
-.album-elem {
-    display: inline-block;
-    width: 100px;
+.album-col {
+    display: flex;
+    overflow: hidden;
     margin: 2px;
+    flex-direction: column;
+    margin-bottom: 0;
 }
 .image {
-    max-width: 10vh;
     border: 2px solid black;
 }
 #avatar {
+    display: block;
+    max-width: 80px;
     float: left;
     margin-right: 5px;
 }
