@@ -7,34 +7,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Здесь заканчивается магия-->
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
     <title>Тест по МИО</title>
 </head>
 <body>
      <header>
-          <nav class="menu">
-               <div class="menu_elem">
-                    <a href="index.html">Главная</a> 
-               </div>
-               <div class="menu_elem">
-                    <a href="about.html">Обо мне</a> 
-               </div> 
-               <div class="menu_elem">
-                    <a href="interests.html">Мои интересы</a> 
-               </div> 
-               <div class="menu_elem">
-                    <a href="study.html">Учеба</a> 
-               </div> 
-               <div class="menu_elem">
-                    <a href="album.html">Фотоальбом</a> 
-               </div> 
-               <div class="menu_elem">
-                    <a href="contact.html">Контакт</a> 
-               </div> 
-               <div class="menu_elem">
-                    <a href="test.html">Тест</a> 
-               </div>   
+          <nav>
+               <ul>
+                    <li
+                         class="menu-tag" name="Главная страница"
+                         onmouseover="onMouseOverImage(this)"
+                         onmouseout="onMouseOutImage(this)"
+                    >
+                         <div class="menu__image-wrapper">
+                              <img src="img/1.jpg" alt="" class="menu__image" />
+                         </div>
+                         <a href="index.html">Главная</a>
+                    </li>
+                    <li
+                         class="menu-tag" name="Обо мне"
+                         onmouseover="onMouseOverImage(this)"
+                         onmouseout="onMouseOutImage(this)"
+                    >
+                         <div class="menu__image-wrapper">
+                              <img src="img/1.jpg" alt="" class="menu__image" />
+                         </div>
+                         <a href="about.html">Обо мне</a>
+                    </li>
+                    <li
+                         class="menu-tag" name="Мои интересы"
+                         onmouseover="onMouseOverImage(this)"
+                         onmouseout="onMouseOutImage(this)"
+                    >
+                         <div class="menu__image-wrapper">
+                              <img src="img/1.jpg" alt="" class="menu__image" />
+                         </div>
+                         <a>Мои интересы</a>
+                         <ul class="interests-dropdown">
+                              <li><a class="alt-href" href="interests.html#hobbies">Мои хобби</a></li>
+                              <li><a class="alt-href" href="interests.html#books">Мои любимые книги</a></li>
+                              <li><a class="alt-href" href="interests.html#music">Моя любимая музыка</a></li>
+                              <li><a class="alt-href" href="interests.html#movies">Мои любимые фильмы</a></li>
+                         </ul>
+                    </li>
+                    <li
+                         class="menu-tag" name="Учеба"
+                         onmouseover="onMouseOverImage(this)"
+                         onmouseout="onMouseOutImage(this)"
+                    >
+                         <div class="menu__image-wrapper">
+                              <img src="img/1.jpg" alt="" class="menu__image" />
+                         </div>
+                         <a href="study.html">Учеба</a>
+                    </li>
+                    <li
+                         class="menu-tag" name="Альбом"
+                         onmouseover="onMouseOverImage(this)"
+                         onmouseout="onMouseOutImage(this)"
+                    >
+                         <div class="menu__image-wrapper">
+                              <img src="img/1.jpg" alt="" class="menu__image" />
+                         </div>
+                         <a href="album.html">Фотоальбом</a>
+                    </li>
+                    <li
+                         class="menu-tag" name="Контакт-форма"   
+                         onmouseover="onMouseOverImage(this)"
+                         onmouseout="onMouseOutImage(this)"
+                    >
+                         <div class="menu__image-wrapper">
+                              <img src="img/1.jpg" alt="" class="menu__image" />
+                         </div>
+                         <a href="contact.html">Контакт</a>
+                    </li>
+                    <li
+                         class="menu-tag" name="Тест по МИО"
+                         onmouseover="onMouseOverImage(this)"
+                         onmouseout="onMouseOutImage(this)"
+                    >
+                         <div class="menu__image-wrapper">
+                              <img src="img/1.jpg" alt="" class="menu__image" />
+                         </div>
+                         <a href="test.html">Тест</a>
+                    </li>
+               </ul>
           </nav>
-    </header>
+          <div id="time" style="color: white; text-align: center;">test</div>
+     </header>
     <main>
      <article>
           <header>
