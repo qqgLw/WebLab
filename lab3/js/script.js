@@ -282,21 +282,21 @@ function getCookie(name) {
 
 
 function saveHistory(name) {
-	lsNull();
+    getLocalStorageOrSetDefaults();
     localStorage.setItem(name, parseInt(localStorage.getItem(name)) + 1);
     console.log(localStorage[name]);
     setCookie(name, parseInt(getCookie(name))+ 1);
     console.log(getCookie(name));
 }
-
-function lsNull() {
+//we need default NUMBER in value to perform later inc
+function getLocalStorageOrSetDefaults() {
     var pageTitles = [];
     const tags = document.querySelectorAll(".menu-tag");
     tags.forEach((tag) => {
         pageTitles.push(tag.getAttribute("name"));
     });
     for (var i = 0; i < pageTitles.length; i++) {
-        var iValue = localStorage[pageTitles[i]];
+        var iValue = localStorage.getItem(pageTitles[i]) ||0;
         localStorage.setItem(pageTitles[i], iValue);
     }
 }
