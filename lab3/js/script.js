@@ -273,20 +273,21 @@ function showHistory(){
 function setCookie(name, value) {
     document.cookie = name + "=" + value + "; ";
 }
-
 //TODO
 function getCookie(name) {
-    //var r = document.cookie.split('; ').find(row => row.startsWith(name)).split('=')[1];
-    return 0;
+  const value = `; ${document.cookie}`;
+  const parts = value.split(`; ${name}=`);
+  if (parts.length === 2) return parts.pop().split(';').shift();
 }
 
 
 function saveHistory(name) {
     getLocalStorageOrSetDefaults();
     localStorage.setItem(name, parseInt(localStorage.getItem(name)) + 1);
-    console.log(localStorage[name]);
-    setCookie(name, parseInt(getCookie(name))+ 1);
-    console.log(getCookie(name));
+    //console.log(localStorage[name]);
+	let thisCookRecord = getCookie(name) || 0;
+	console.log(thisCookRecord);
+    setCookie(name, parseInt(thisCookRecord)+ 1);
 }
 //we need default NUMBER in value to perform later inc
 function getLocalStorageOrSetDefaults() {
