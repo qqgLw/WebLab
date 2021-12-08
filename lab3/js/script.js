@@ -266,7 +266,7 @@ function showHistory(){
 	var pages = new Array('index', 'about', 'interests',  'study', 'photos', 'contacts', 'tests');
     for (var i = 0; i < pages.length; i++) {
     	document.getElementById(pages[i] + '_local').innerHTML = localStorage.getItem(pageTitles[i]);
-        document.getElementById(pages[i] + '_cookie').innerHTML = getCookie(pageTitles[i]);
+        document.getElementById(pages[i] + '_cookie').innerHTML = getCookie(pageTitles[i]) || 'Нет посещений';
     }
 }
 
