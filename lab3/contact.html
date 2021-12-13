@@ -105,7 +105,7 @@
                     <label for="name">ФИО</label>
                     <input type="text" placeholder="ФИО" id="name" onblur = "validate_fio('hintName')">
                     <label for="email">Электронная почта</label>
-                    <input type="email" placeholder="Электронная почта" id="email">
+                    <input type="text" placeholder="Электронная почта" id="email" onblur = "validate_email('hintEmail')">
                     <label for="phone">Телефон</label>
                     <input type="tel" placeholder="+7(123)-456-78-90" id="phone" onblur = "validate_phone('hintPhone')">
                </div>
@@ -128,10 +128,10 @@
                     <label for="gender_female">Женский</label>
                     <input type="radio" name="gender" id="gender_female" value="female">
                </div>
-               <textarea name="message" id="inpmessage"cols="20" rows="5" placeholder="Ваше сообщение*"></textarea>
+               <textarea name="message" id="inpmessage"cols="20" rows="5" placeholder="Ваше сообщение*" onblur = "validate_mes()"></textarea>
                <div class="submit-container">
                  <input name="submit" type="submit" value="Отправить"/>
-                 <input name="reset" type="reset" value="Сбросить"/>
+                 <input name="reset" type="reset" onclick="eraseValidationMarks()" value="Сбросить"/>
                </div>
                </form> 
           </section>

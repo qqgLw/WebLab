@@ -201,6 +201,13 @@ function validate_form() {
     return valid;
 }
 
+function eraseValidationMarks(){
+	let inputs = document.querySelectorAll("input");
+	inputs.forEach((input) => {
+        input.style.backgroundColor = null;
+    });
+}
+
 function validate_fio(hint){
     let input = document.getElementById("name");
     const regExp = /^(?:[A-Za-zА-Яа-я]+ ){2}[A-Za-zА-Яа-я]+$/;
@@ -217,7 +224,7 @@ function validate_fio(hint){
 
 function validate_phone(hint){
     let input = document.getElementById("phone");
-    const regExp = /^\+((7)|(3))[0-9]{8,10}$/;;
+    const regExp = /^\+((7)|(3))[0-9]{8,10}$/;
     if (!(regExp.test(input.value))) {
         input.style.backgroundColor = "#FF6347";
         input.setCustomValidity(hints[hids.indexOf(hint)]);
@@ -242,8 +249,8 @@ function validate_mes(){
 
 function validate_email(hint){
     let input = document.getElementById("email");
-    var regExp = /^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$/;
-    if (!regExp.test(input.value)) {
+    var regExp = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (!(regExp.test(input.value))) {
         input.style.backgroundColor = "#FF6347";
         input.setCustomValidity(hints[hids.indexOf(hint)]);
         return false;
@@ -266,27 +273,28 @@ function showHistory(){
 	var pages = new Array('index', 'about', 'interests',  'study', 'photos', 'contacts', 'tests');
     for (var i = 0; i < pages.length; i++) {
     	document.getElementById(pages[i] + '_local').innerHTML = localStorage.getItem(pageTitles[i]);
-        document.getElementById(pages[i] + '_cookie').innerHTML = getCookie(pageTitles[i]);
+        document.getElementById(pages[i] + '_cookie').innerHTML = getCookie(pageTitles[i]) || 'Нет посещений';
     }
 }
 
 function setCookie(name, value) {
     document.cookie = name + "=" + value + "; ";
 }
-
 //TODO
 function getCookie(name) {
-    //var r = document.cookie.split('; ').find(row => row.startsWith(name)).split('=')[1];
-    return 0;
+  const value = `; ${document.cookie}`;
+  const parts = value.split(`; ${name}=`);
+  if (parts.length === 2) return parts.pop().split(';').shift();
 }
 
 
 function saveHistory(name) {
     getLocalStorageOrSetDefaults();
     localStorage.setItem(name, parseInt(localStorage.getItem(name)) + 1);
-    console.log(localStorage[name]);
-    setCookie(name, parseInt(getCookie(name))+ 1);
-    console.log(getCookie(name));
+    //console.log(localStorage[name]);
+	let thisCookRecord = getCookie(name) || 0;
+	console.log(thisCookRecord);
+    setCookie(name, parseInt(thisCookRecord)+ 1);
 }
 //we need default NUMBER in value to perform later inc
 function getLocalStorageOrSetDefaults() {
