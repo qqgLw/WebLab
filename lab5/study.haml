@@ -1,0 +1,147 @@
+!!!
+%html{:lang => "ru"}
+  %head
+    %meta{:charset => "UTF-8"}/
+    %title Учёба
+    %link{:href => "css/style.css", :rel => "stylesheet", :type => "text/css"}/
+    %script{:src => "js/script.js"}
+  %body
+    .body
+    = Haml::Engine.new(File.read('./includes/_header.haml')).render
+    %main
+      %article
+        %header
+          %h1 Учеба
+        %section
+          %header
+            %h2 Севастопольский Государственный Университет
+          %p.tabbed 
+            Институт информационных технологий и управления в технических
+            системах
+          %table.center
+            %tbody
+              %tr
+                %td{:colspan => "100%"} ПЛАН УЧЕБНОГО ПРОЦЕССА
+              %tr
+                %th{:rowspan => "2"} #
+                %th{:rowspan => "2"} Дисциплина
+                %th{:rowspan => "2"} Кафедра
+                %th{:colspan => "6"} Всего часов
+              %tr
+                %th Всего
+                %th Ауд
+                %th Лк
+                %th Лб
+                %th Пр
+                %th СРС
+              %tr
+                %th 1
+                %td
+                  %i Экология
+                %td.center-text БЖ
+                %td 54
+                %td 27
+                %td 18
+                %td 0
+                %td 9
+                %td 27
+              %tr
+                %th 2
+                %td Высшая математика
+                %td.center-text ВМ
+                %td 540
+                %td 282
+                %td 141
+                %td 0
+                %td 141
+                %td 258
+              %tr
+                %th 3
+                %td Русский язык и культура речи
+                %td.center-text НГиГ
+                %td 108
+                %td 54
+                %td 18
+                %td 0
+                %td 36
+                %td 54
+              %tr
+                %th 4
+                %td Основы дискретной математики
+                %td.center-text ИС
+                %td 216
+                %td 139
+                %td 87
+                %td 0
+                %td 52
+                %td 77
+              %tr
+                %th 5
+                %td Основы программирования и алгоритмические языки
+                %td.center-text ИС
+                %td 405
+                %td 210
+                %td 105
+                %td 87
+                %td 18
+                %td 195
+              %tr
+                %th 6
+                %td Основы экологии
+                %td.center-text ПЭОП
+                %td 54
+                %td 27
+                %td 18
+                %td 0
+                %td 9
+                %td 27
+              %tr
+                %th 7
+                %td Теория вероятностей и математическая статистика
+                %td.center-text ИС
+                %td 162
+                %td 72
+                %td 54
+                %td 18
+                %td 0
+                %td 90
+              %tr
+                %th 8
+                %td Физика
+                %td.center-text Физики
+                %td 324
+                %td 194
+                %td 106
+                %td 88
+                %td 0
+                %td 130
+              %tr
+                %th 9
+                %td Основы электротехники и электроники
+                %td.center-text ИС
+                %td 108
+                %td 72
+                %td 36
+                %td 18
+                %td 18
+                %td 36
+              %tr
+                %th 10
+                %td Численные методы в информатике
+                %td.center-text ИС
+                %td 189
+                %td 89
+                %td 36
+                %td 36
+                %td 17
+                %td 100
+              %tr
+                %th 11
+                %td Методы исследования операций
+                %td.center-text ИС
+                %td 216
+                %td 104
+                %td 52
+                %td 35
+                %td 17
+                %td 112

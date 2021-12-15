@@ -1,0 +1,28 @@
+!!!
+%html{:lang => "ru"}
+  %head
+    %meta{:charset => "UTF-8"}/
+    %title Обо мне
+    %link{:href => "css/style.css", :rel => "stylesheet", :type => "text/css"}/
+    %script{:src => "js/script.js"}
+  %body
+    .body
+    = Haml::Engine.new(File.read('./includes/_header.haml')).render
+    %main
+      %article
+        %header
+          %h1 Обо мне
+        %section
+          %p 
+          Lorem ipsum dolor sit amet, consectetur 
+          adipiscing elit, sed do eiusmod tempor 
+          incididunt ut labore et dolore magna aliqua. 
+          Et malesuada fames ac turpis. Vestibulum lectus 
+          mauris ultrices eros in. Quis varius quam 
+          quisque id. Enim nulla aliquet porttitor lacus 
+          luctus accumsan. Maecenas pharetra convallis 
+          posuere morbi leo urna molestie at elementum. 
+          Mauris sit amet massa vitae tortor condimentum. 
+          Enim sed faucibus turpis in eu. Justo eget 
+          magna fermentum iaculis eu non. Ut tellus 
+          elementum sagittis vitae et leo duis.

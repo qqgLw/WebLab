@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>История просмотра</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<script src="js/script.js"></script>
+	</head>
+	<body onload="showHistory()">
+		<header>
+			<nav>
+				 <ul>
+					  <li
+						   class="menu-tag" name="Главная страница"
+						   onmouseover="onMouseOverImage(this)"
+						   onmouseout="onMouseOutImage(this)"
+					  >
+						   <div class="menu__image-wrapper">
+								<img src="img/1.jpg" alt="" class="menu__image" />
+						   </div>
+						   <a href="index.html">Главная</a>
+					  </li>
+					  <li
+						   class="menu-tag" name="Обо мне"
+						   onmouseover="onMouseOverImage(this)"
+						   onmouseout="onMouseOutImage(this)"
+					  >
+						   <div class="menu__image-wrapper">
+								<img src="img/1.jpg" alt="" class="menu__image" />
+						   </div>
+						   <a href="about.html">Обо мне</a>
+					  </li>
+					  <li
+						   class="menu-tag" name="Мои интересы"
+						   onmouseover="onMouseOverImage(this)"
+						   onmouseout="onMouseOutImage(this)"
+					  >
+						   <div class="menu__image-wrapper">
+								<img src="img/1.jpg" alt="" class="menu__image" />
+						   </div>
+						   <a>Мои интересы</a>
+						   <ul class="interests-dropdown">
+								<li><a class="alt-href" href="interests.html#hobbies">Мои хобби</a></li>
+								<li><a class="alt-href" href="interests.html#books">Мои любимые книги</a></li>
+								<li><a class="alt-href" href="interests.html#music">Моя любимая музыка</a></li>
+								<li><a class="alt-href" href="interests.html#movies">Мои любимые фильмы</a></li>
+						   </ul>
+					  </li>
+					  <li
+						   class="menu-tag" name="Учеба"
+						   onmouseover="onMouseOverImage(this)"
+						   onmouseout="onMouseOutImage(this)"
+					  >
+						   <div class="menu__image-wrapper">
+								<img src="img/1.jpg" alt="" class="menu__image" />
+						   </div>
+						   <a href="study.html">Учеба</a>
+					  </li>
+					  <li
+						   class="menu-tag" name="Альбом"
+						   onmouseover="onMouseOverImage(this)"
+						   onmouseout="onMouseOutImage(this)"
+					  >
+						   <div class="menu__image-wrapper">
+								<img src="img/1.jpg" alt="" class="menu__image" />
+						   </div>
+						   <a href="album.html">Фотоальбом</a>
+					  </li>
+					  <li
+						   class="menu-tag" name="Контакт-форма"   
+						   onmouseover="onMouseOverImage(this)"
+						   onmouseout="onMouseOutImage(this)"
+					  >
+						   <div class="menu__image-wrapper">
+								<img src="img/1.jpg" alt="" class="menu__image" />
+						   </div>
+						   <a href="contact.html">Контакт</a>
+					  </li>
+					  <li
+						   class="menu-tag" name="Тест по МИО"
+						   onmouseover="onMouseOverImage(this)"
+						   onmouseout="onMouseOutImage(this)"
+					  >
+						   <div class="menu__image-wrapper">
+								<img src="img/1.jpg" alt="" class="menu__image" />
+						   </div>
+						   <a href="test.html">Тест</a>
+					  </li>
+					  <li class="menu-tag" name="История просмотра" style="display: none;"></li>
+				 </ul>
+			</nav>
+			<div id="time" style="color: white; text-align: center;">test</div>
+	   </header>
+		<main> 
+			<article>
+			<h1 class="centered">
+				История просмотра! 
+			</h1>
+			<h3 style="text-align : center;">История текущего сеанса</h3>
+			<table  cellpadding="5" cellspacing="0">
+				<tr>
+					<th>Главная</th>
+					<th>Обо мне</th>	
+					<th>Мои интересы</th>
+					<th>Учеба</th>
+					<th>Фотоальбом</th>	
+					<th>Контакт</th>
+					<th>Тест</th>
+				</tr>
+				<tr>
+					<th id="index_local"></th>
+					<th id="about_local"></th>	
+					<th id="interests_local"></th>
+					<th id="study_local"></th>
+					<th id="photos_local"></th>	
+					<th id="contacts_local"></th>
+					<th id="tests_local"></th>
+				</tr>
+			</table>
+			<h3 style="text-align : center;">История за все время</h3>
+			<table cellpadding="5" cellspacing="0">
+				<tr>
+					<th>Главная</th>
+					<th>Обо мне</th>	
+					<th>Мои интересы</th>
+					<th>Учеба</th>
+					<th>Фотоальбом</th>	
+					<th>Контакт</th>
+					<th>Тест</th>
+				</tr>
+				<tr>
+					<th id="index_cookie"></th>
+					<th id="about_cookie"></th>	
+					<th id="interests_cookie"></th>
+					<th id="study_cookie"></th>
+					<th id="photos_cookie"></th>	
+					<th id="contacts_cookie"></th>
+					<th id="tests_cookie"></th>
+				</tr>
+			</table>
+		</article>
+		</main>
+	</body>
+</html>

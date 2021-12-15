@@ -1,0 +1,29 @@
+!!!
+-@photos = ['https://picsum.photos/id/500/500/300','https://picsum.photos/id/501/500/300','https://picsum.photos/id/502/500/300','https://picsum.photos/id/503/500/300','https://picsum.photos/id/504/500/300','https://picsum.photos/id/505/500/300','https://picsum.photos/id/506/500/300','https://picsum.photos/id/507/500/300','https://picsum.photos/id/508/500/300','https://picsum.photos/id/509/500/300','https://picsum.photos/id/510/500/300','https://picsum.photos/id/511/500/300','https://picsum.photos/id/512/500/300','https://picsum.photos/id/513/500/300','https://picsum.photos/id/514/500/300']
+%html{:lang => "ru"}
+  %head
+    %meta{:charset => "UTF-8"}/
+    %title Альбом
+    %link{:href => "css/style.css", :rel => "stylesheet", :type => "text/css"}/
+    %script{:src => "https://code.jquery.com/jquery-3.6.0.min.js", :type => "text/javascript"}
+    %script{:src => "js/script.js"}
+    %script{:src => "js/album-script.js"}
+  %body
+    .body
+    = Haml::Engine.new(File.read('./includes/_header.haml')).render
+    %main
+      %article
+        %header
+          %h1 Мой Альбом
+        %section
+          %header
+            %a.alt-href{:href => "index.html"}
+            %p На главную
+          .album-container
+            -@photos.each do |v|
+              -if @photos.index(v)%5 == 0
+                .album-row
+                  -(@photos.index(v)..(@photos.index(v)+4)).each do |i|
+                    %div.album-col
+                      %img.image{:src=> @photos[i],:dataenlargeable=>'null'}
+                        %p Заголовок фото##{i+1}
