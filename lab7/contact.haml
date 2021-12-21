@@ -1,0 +1,46 @@
+!!!
+%html{:lang => "ru"}
+  %head
+    %meta{:charset => "UTF-8"}/
+    %title Контакт-форма
+    %link{:href => "css/style.css", :rel => "stylesheet", :type => "text/css"}/
+    %script{:src => "https://code.jquery.com/jquery-3.6.0.min.js"}
+    %script{:src => "js/script.js"}
+  %body
+    .body
+    = Haml::Engine.new(File.read('./includes/_header.haml')).render
+    %main
+      %article
+        %header
+          %h1 Напишите мне на  эл. почту
+        %section
+          %form{:action => "mailto:antontoporkoff@gmail.com", :method => "POST", :onsubmit => "return validate_form()"}
+            %div
+              %label{:for => "name"} ФИО
+              %input#name{:onblur => "validate_fio('hintName')", :placeholder => "ФИО", :type => "text"}/
+              .popover Введите ваше ФИО полностью
+              %label{:for => "email"} Электронная почта
+              %input#email{:onblur => "validate_email('hintMail')", :placeholder => "Электронная почта", :type => "email"}/
+              %label{:for => "phone"} Телефон
+              %input#phone{:onblur => "validate_phone('hintPhone')", :placeholder => "+7(123)-456-78-90", :type => "tel"}/
+            %div
+              %label{:for => "dateOfBirth"} Дата рождения
+              %input#dateOfBirth{:name => "dateOfBirth", :onclick => "showCalendar(new Date())", :readonly => "readonly", :value => ""}/
+              .popover Выберите дату рождения
+              %br/
+              #calendar{style: 'display:inline;'}
+                Месяц:
+                %select#month{:onclick => "redrawCalendar()"}
+                Год:
+                %select#year{:onclick => "redrawCalendar()"}
+                %button{:onclick => "hideCalendar()", :type => "button"} Спрятать календарь
+            .radio-select
+              %p Выберите пол:
+              %input#gender_male{:checked => "checked", :name => "gender", :onclick => "hideCalendar()", :type => "radio", :value => "male"}/
+              %label{:for => "gender_male"} Мужской
+              %input#gender_female{:name => "gender", :onclick => "hideCalendar()", :type => "radio", :value => "female"}/
+              %label{:for => "gender_female"} Женский
+            %textarea#inpmessage{:name => "message", :onblur => "validate_mes()", :onclick => "hideCalendar()", :placeholder => "Сообщение"}
+            .submit-container
+              %input.submit{:type => "submit", :value => "Отправить"}/
+              %input.submit{:type => "reset", :onclick => "eraseValidationMarks()", :value => "Очистить форму"}/
