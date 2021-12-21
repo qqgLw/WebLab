@@ -1,0 +1,41 @@
+%header
+  %nav
+    %ul
+      %li.menu_tag{:name => "Главная страница", :onmouseout => "onMouseOutImage(this)", :onmouseover => "onMouseOverImage(this)"}
+        %div.menu__image-wrapper
+          %img.menu__image{:src => "img/1.jpg", alt: ""}
+        %a{:href => "index.html"} Главная
+      %li.menu_tag{:name => "Обо мне", :onmouseout => "onMouseOutImage(this)", :onmouseover => "onMouseOverImage(this)"}
+        %div.menu__image-wrapper
+          %img.menu__image{:src => "img/1.jpg", alt: ""}
+        %a{:href => "about.html"} Обо мне
+      %li.menu_tag{:name => "Мои интересы", :onmouseout => "onMouseOutImage(this)", :onmouseover => "onMouseOverImage(this)"}
+        %div.menu__image-wrapper
+          %img.menu__image{:src => "img/1.jpg", alt: ""}
+        %a Мои интересы
+        %ul.interests-dropdown
+          %li
+            %a.alt-href{:href => "interests.html#hobbies"} Мои хобби
+          %li
+            %a.alt-href{:href => "interests.html#books"} Мои любимые книги
+          %li
+            %a.alt-href{:href => "interests.html#music"} Моя любимая музыка
+          %li
+            %a.alt-href{:href => "interests.html#movies"} Мои любимые фильмы
+      %li.menu_tag{:name => "Учеба", :onmouseout => "onMouseOutImage(this)", :onmouseover => "onMouseOverImage(this)"}
+        %div.menu__image-wrapper
+          %img.menu__image{:src => "img/1.jpg", alt: ""}
+        %a{:href => "study.html"} Учеба
+      %li.menu_tag{:name => "Альбом", :onmouseout => "onMouseOutImage(this)", :onmouseover => "onMouseOverImage(this)"}
+        %div.menu__image-wrapper
+          %img.menu__image{:src => "img/1.jpg", alt: ""}
+        %a{:href => "album.html"} Фотоальбом
+      %li.menu_tag{:name => "Контакт-форма", :onmouseout => "onMouseOutImage(this)", :onmouseover => "onMouseOverImage(this)"}
+        %div.menu__image-wrapper
+          %img.menu__image{:src => "img/1.jpg", alt: ""}
+        %a{:href => "contact.html"} Контакт
+      %li.menu_tag{:name => "Тест по МИО", :onmouseout => "onMouseOutImage(this)", :onmouseover => "onMouseOverImage(this)"}
+        %div.menu__image-wrapper
+          %img.menu__image{:src => "img/1.jpg", alt: ""}
+        %a{:href => "test.html"} Тест
+  #time{style: 'color:white; text-align: center;'}

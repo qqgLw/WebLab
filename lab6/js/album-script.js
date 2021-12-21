@@ -19,7 +19,6 @@ const photos =
         `https://picsum.photos/id/130/500/500`,
         `https://picsum.photos/id/140/500/500`
     ]
-
     const titles =
     [
         'Заголовок фото #1',
@@ -122,7 +121,7 @@ function imageSlider(){
         .appendTo(".album-container");
 
       let currentPhotoInSliderStart = photos.indexOf( $(".active").attr("path"))+1;
-      $(".active").append($("<div>", { class: "imRight" })
+      $(".active").append($("<div>", { class: "right" })
       .css({
           position: "fixed",
           top: "645px",
@@ -130,7 +129,7 @@ function imageSlider(){
               color: "white"
       }));
 
-      $(".active").append($("<div>", { class: "imLeft"})
+      $(".active").append($("<div>", { class: "left"})
       .css({
           position: "fixed",
           top: "645px",
@@ -158,7 +157,7 @@ function imageSlider(){
         modal.remove();
       });
 
-      $(".imRight").on("click", function () {
+      $(".right").on("click", function () {
         let currentImage = $(".active");
         let currentPhotoInSlider = photos.indexOf(currentImage.attr("path"));
         const newPhoto =
@@ -182,7 +181,7 @@ function imageSlider(){
         });
       });
 
-      $(".imLeft").on("click", function () {
+      $(".left").on("click", function () {
         let currentImage = $(".active");
         let currentPhotoInSlider = photos.indexOf(currentImage.attr("path"));
         const newPhoto =
